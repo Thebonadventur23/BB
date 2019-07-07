@@ -1,0 +1,11 @@
+<h1> Hello admin </h1>
+
+<h3> There is list of  our clients </h3>
+
+</br>
+<% @file.each_line do |line| %>
+  <%= line %></br>
+<% end %>
+</br>
+
+<%= @file.close %>
